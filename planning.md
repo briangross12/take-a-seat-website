@@ -36,11 +36,21 @@ PAGE 4
 
 /*************DESIGN ELEMENTS******************/
 
+Design Brief
+    Develop a four page website for practice
+    Build a wireframe in Figma
+    Identify design elements
+    Build out HTML and test links
+    Build out CSS and test
+    Deploy website with Netlify
+
+
 Color scheme overall
-    Light Grey #D3D6DB
-    Medium/Dark Grey #3A4750
-    Dark Grey #303841
-    Accent Red #BE3144
+    Deep Orange #B55400
+    Light Grey #EEEEEE
+    Medium Grey #D9D9D9
+    Dark Grey #A9998D
+
 
 Fonts
-    Open Sans (variable fonts)
+    Noto Sans (variable fonts)
