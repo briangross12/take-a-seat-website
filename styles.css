@@ -5,8 +5,9 @@
 
 body {
     background-color: #b55400;
-    margin: 0 20px;
+    margin: 0;
     font-family: "Noto Sans";
+    border: solid 8px black;
 }
 
 .navbar {
@@ -22,7 +23,7 @@ body {
     grid-row: 1 / 4;
     height: 90px;
     width: 90px;
-    margin: 30px 0 0 60px;
+    margin: 30px 0 0 50px;
 }
 
 .nav-link {
@@ -38,6 +39,8 @@ body {
 .archives {
     grid-column: 11;
     grid-row: 3;
+    text-align: right;
+    padding: 20px 0;
 }
 
 .vote {
@@ -58,18 +61,24 @@ body {
 .main-grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
     column-gap: 20px;
-    /*border: solid 1px red;*/
 }
 
 .headline-big {
-    grid-column: 3 / 13;
+    grid-column: 3 / 12;
     font-weight: 200;
-    font-size: 220px;
+    font-size: 12vw;
+    line-height: 220px;
     color: #98897b;
-    letter-spacing: -8px;
-    margin: 50px 0 30px 0;
+    letter-spacing: -.5vw;
+    margin: 60px 0 30px 0;
     /*border: solid 1px red;*/
+}
+
+.x-point {
+    font-weight: 100;
+    font-size: 13vw;
 }
 
 .sub-head {
@@ -79,7 +88,7 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-top: 0;
-    padding-top: 10px;
+    padding-top: 9px;
     color: black;
     line-height: 180%;
     /*border: solid 1px red;*/
@@ -92,33 +101,62 @@ body {
     color: black;
     margin-top: 0;
     line-height: 220%;
-
 }
 
 .image-main-1 {
     grid-column: 6 / 12;
-    background-color: #98897b;
+    width: 100%;
+    object-fit: contain;
     border: solid 1px black;
     border-radius: 5px;
-    width: auto;
-    height: 822px;
     margin-bottom: 100px;
 }
 
 .image-main-2 {
     grid-column: 6 / 9;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     background-color: #b3a498;
     border: solid 1px black;
     border-radius: 5px;
-    width: auto;
-    height: 500px;
+    margin-bottom: 100px;
 }
 
 .image-main-3 {
     grid-column: 9 / 12;
-    background-color: #97816f;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: #cfc9c5;
     border: solid 1px black;
     border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.footer {
+    display: inline-block;
+    height: 80px;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 0;
+    margin-left: 70px;
+}
+
+.footer-link {
+    width: 25px;
+    margin-left: 25px;
+}
+
+.footer-link:hover {
+    width: 35px;
+}
+
+.copyright {
     width: auto;
-    height: 500px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 14px;
+    color: black;
 }
