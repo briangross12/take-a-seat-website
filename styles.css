@@ -135,27 +135,45 @@ body {
 }
 
 .footer {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 20px;
     height: 80px;
-    width: 100%;
-    margin-left: 0px;
-    margin-bottom: 0;
-    margin-left: 70px;
+    width: auto;
+    align-items: center;
+    border-top: solid 1px rgb(114, 113, 110);
 }
 
 .footer-link {
     width: 25px;
-    margin-left: 25px;
 }
 
 .footer-link:hover {
     width: 35px;
 }
 
+
+.facebook {
+    grid-column-start: 2;
+}
+
+.linkedin {
+    grid-column-start: 3;
+}
+
+.reddit {
+    grid-column-start: 4;
+}
+
+.twitter {
+    grid-column-start: 5;
+}
+
+
 .copyright {
+    grid-column: 6 / 12;
     width: auto;
-    margin-bottom: 10px;
-    margin-left: 30px;
     font-weight: 300;
     font-size: 14px;
     color: black;
