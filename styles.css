@@ -39,11 +39,11 @@ body {
     margin-left: 80px;
     margin-right: 80px;
 }
+
 .home {
-    font-size: 9pt;
+    font-size: 12pt;
     margin-right: 80px;
 }
-
 
 .main-grid-container {
     display: grid;
@@ -61,7 +61,6 @@ body {
     color: #98897b;
     letter-spacing: -.5vw;
     margin: 60px 0 30px 0;
-    /*border: solid 1px red;*/
 }
 
 .headline-mid {
@@ -72,7 +71,6 @@ body {
     color: #98897b;
     letter-spacing: -.15vw;
     margin: 60px 0 30px 0;
-    /*border: solid 1px red;*/
 }
 
 .x-point {
@@ -90,7 +88,32 @@ body {
     padding-top: 9px;
     color: black;
     line-height: 180%;
-    /*border: solid 1px red;*/
+}
+
+.article-date {
+    grid-column: 3 / 6;
+    font-weight: 300;
+    font-size: 14px;
+    color: black;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.container-text {
+    text-align: center;
+    padding: 2px 12px 12px 12px;
+}
+
+.sub-head-card {
+    grid-column: 3 / 6;
+    font-weight: 700;
+    font-size: 10pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 9px;
+    color: black;
+    line-height: 180%;
 }
 
 .body-copy {
@@ -102,12 +125,12 @@ body {
     line-height: 220%;
 }
 
-.read-more {
-    color: #aba39a;
+.continue-reading {
+    color: #988f86;
     text-decoration: none;
 }
 
-.read-more:hover {
+.continue-reading:hover {
     color: #dad4cf;
 }
 
@@ -116,7 +139,7 @@ body {
     width: 100%;
     object-fit: contain;
     border: solid 1px black;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 100px;
 }
 
@@ -127,7 +150,7 @@ body {
     object-fit: contain;
     background-color: #b3a498;
     border: solid 1px black;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 100px;
 }
 
@@ -138,50 +161,118 @@ body {
     object-fit: contain;
     background-color: #cfc9c5;
     border: solid 1px black;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 100px;
 }
 
+.image-learn-1 {
+    grid-column: 6 / 12;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: #b3a498;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.image-learn-2 {
+    grid-column: 6 / 12;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.image-learn-3 {
+    grid-column: 6 / 12;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.image-card {
+    border: solid 1px black;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.card-1 {
+    grid-column: 3 / 6;
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    object-fit: scale-down;
+    background-color: #b3a498;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.card-2 {
+    grid-column: 6 / 9;
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    object-fit: scale-down;
+    background-color: #b3a498;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.card-3 {
+    grid-column: 9 / 12;
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    object-fit: scale-down;
+    background-color: #b3a498;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.card:hover {
+    offset: 5px 0 5px 0;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.3);
+    filter: brightness(110%)
+}
+
 .footer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    column-gap: 20px;
     height: 80px;
-    width: auto;
+    width: 100%;
     align-items: center;
 }
 
 .footer-link {
+    float: left;
     width: 25px;
+    margin-right: 45px;
 }
 
 .footer-link:hover {
     width: 35px;
 }
 
-
 .facebook {
-    grid-column-start: 2;
+    margin-left: 150px;
 }
-
-.linkedin {
-    grid-column-start: 3;
-}
-
-.reddit {
-    grid-column-start: 4;
-}
-
-.twitter {
-    grid-column-start: 5;
-}
-
 
 .copyright {
-    grid-column: 6 / 12;
-    width: auto;
+    float: left;
     font-weight: 300;
     font-size: 14px;
-    color: black;
+    color: white;
+    padding-top: 5px;
 }
