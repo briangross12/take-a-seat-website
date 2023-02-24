@@ -23,27 +23,42 @@
 
     <!-----------------MAIN SECTION---------------->
     <div class="main-grid-container">
-        <h1 class="headline-mid">Vote for your favorite chair of the year!</h1>
+        <h1 class="headline-mid">Vote for your favorite chair of the year!</h1><br>
 
-        <h2 class="sub-head">This is an H2 stylized sub headline</h2>
+        <form class="form" action="">
+            <fieldset class="form-vote-field">
+                <label for="fav-chair"><strong>What is your favorite mid-century modern chair?</strong></label><br>
+                <input type="text" id="fav-chair" name="fav-chair" value="chair name"><br><br>
 
-        <p class="body-copy">This is body copy. It is for position only, and I will replace this copy when I have relavant text to add. It is for position only, and I will replace this copy when I have relavant text to add. This is body copy. It is for position only, and I will replace this copy when I have relavant text to add. It is for position only, and I will replace this copy when I have relavant text to add. &nbsp; <a class="read-more" href="">Read&nbsp;more...</a></p>
+                <span><strong>What made you choose this chair?</strong></span><br>
 
-        <img class="image-main-1" src="images/Man-testing-chair.jpg" alt="man in chair">
+                <input type="checkbox" id="chair-options" name="chair-options" value="comfortable">
+                <label for="chair-options">Comfortable</label><br>
 
-        <h2 class="sub-head">This is another headline but a bit longer so it wraps to two lines</h2>
+                <input type="checkbox" id="chair-options" name="chair-options" value="stylish">
+                <label for="chair-options">Stylish</label><br>
 
-        <p class="body-copy">This is body copy. It is for position only, and I will replace this copy when I have relavant text to add. It is for position only, and I will replace this copy when I have relavant text to add. This is body copy. It is for position only, and I will replace this copy when I have relavant text to add. &nbsp; <a class="read-more" href="">Read&nbsp;more...</a></p>
+                <input type="checkbox" id="chair-options" name="chair-options" value="materials">
+                <label for="chair-options">Materials</label><br>
 
-        <img class="image-main-2" src="images/Rietveldt-chair.jpg" alt="patty difusa chair">
+                <input type="checkbox" id="chair-options" name="chair-options" value="statement">
+                <label for="chair-options">Makes a statement</label><br>
 
-        <img class="image-main-3" src="images/cesca-chairs-3.jpeg" alt="cesca chairs">
+                <input type="checkbox" id="chair-options" name="chair-options" value="value">
+                <label for="chair-options">Collector value</label><br>
 
-        <h2 class="sub-head">Yet another stylized headline for your enjoyment</h2>
+                <input type="checkbox" id="chair-options" name="chair-options" value="iconic">
+                <label for="chair-options">Iconic design</label><br><br>
 
-        <p class="body-copy">More body copy. It is for position only, and I will replace this copy when I have relavant text to add. It is for position only, and I will replace this copy when I have relavant text to add. This is body copy. It is for position only, and I will replace this copy when I have relavant text to add. It is for position only, and I will replace this copy when I have relavant text to add. This is body copy. It is for position only, and I will replace this copy when I have relavant text to add. This is body copy. It is for position only, and I will replace this copy when I have relavant text to add. &nbsp; <a class="read-more" href="">Read&nbsp;more...</a></p>
+                <label for="comment-chair"><strong>Add a personal comment to your vote submission...</strong></label><br>
+                <textarea id="comment-chair" name="comment-chair" rows="12" cols="50"></textarea>
 
-        <img class="image-main-1" src="images/Eames-lounge-chair.jpg" alt="Eames lounge chair">
+                <input type="submit" value="Submit">
+
+            </fieldset>
+        </form>
+
+
 
     </div>
 

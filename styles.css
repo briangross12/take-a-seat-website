@@ -246,7 +246,7 @@ body {
 .card:hover {
     offset: 5px 0 5px 0;
     box-shadow: 15px 15px 15px rgba(0,0,0,0.3);
-    filter: brightness(110%)
+    filter: brightness(115%)
 }
 
 .footer {
@@ -275,4 +275,24 @@ body {
     font-size: 14px;
     color: white;
     padding-top: 5px;
+}
+
+.form {
+    grid-column: 6 / 9;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    line-height: 220%;
+}
+
+.form-vote-field {
+    padding: 20px;
+    background-color: #d7c3af;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+#fav-chair {
+    width: 95.5%;
+    padding: 15px 0 15px 15px;
 }
